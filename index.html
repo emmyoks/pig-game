@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pig Game</title>
+    <link href="bright.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+   <button id="theme-switch" class="">Night Mode</button>
+    <div id="wrapper">
+       <!-- <img src="dice6.jpg" class="dice"/> -->
+        <div class="player0 active">
+            <div class="timer" id="timer-p0"></div>
+            <div class="pname" id="p0">Player 1</div>
+            <div class="total" id="total-point-p0">0</div>
+            <i id="win-or-lose-0"></i>
+            <div class="curr-box">
+                <div class="curr-label">Points</div>
+                <div class="curr-point" id="curr-point-p0">0</div>
+            </div>
+        </div>
+        <div id="buttons">
+            <button id="new"><i class="add-circle">&#xe148</i> New Game </button>
+            <button id="roll"><i class="autorenew">&#xe863</i> Roll Dice</button>
+            <button id="hold"><i class="arrow_downward"></i> Hold</button>
+        </div>
+        <div class="player1">
+            <div class="timer" id="timer-p1"></div>
+            <div class="pname" id="p1">Player 2</div>
+            <div class="total" id="total-point-p1">0</div>
+            <i id="win-or-lose-1"></i>
+            <div class="curr-box">
+                <div class="curr-label">Points</div>
+                <div class="curr-point" id="curr-point-p1">0</div>
+            </div>
+        </div>
+       
+    </div>
+    <i> *Game is best played in landscape mode.</i>
+</body>
+</html>
