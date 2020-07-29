@@ -1,9 +1,9 @@
 
 /*
 Game rules;
-- The game has two player, playing in rounds
-- In each turn a player rolls the dice as many times as he wishes
-- But if a player rolls a "1", the player losses his current points, and it's the next player
+- The game has two players, playing in rounds
+- Each turn a player rolls the dice as many times as he wishes
+- But if a player rolls a "1", the player losses his current point, and it's the next player
 - You can hold your current scores, so it get added to your total score.
 - The first player to reach 100points wins the game.
 
