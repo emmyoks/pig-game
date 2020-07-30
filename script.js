@@ -9,7 +9,7 @@ Game rules;
 
 */
 // setting the theme to either day or night according to the current time
-var nightHour = [11,19,20,21,22,23,0,1,2,3,4,5,6]
+var nightHour = [19,20,21,22,23,0,1,2,3,4,5,6]
 var currHour = new Date().getHours()
 var currTheme = document.querySelector("link").href
 if (nightHour.includes(currHour)){
