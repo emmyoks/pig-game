@@ -63,6 +63,9 @@ body{background-image: url("bg2.jpg");
 #player-info form input:hover{
     opacity: 1;
 }
+#p0 ,#p1{
+    text-transform: capitalize;
+}
 .player0{
     font-size: 2em;
     font-weight: lighter;
@@ -83,6 +86,7 @@ body{background-image: url("bg2.jpg");
     width: 50%;
     
 }
+
 .timer{
     background-color: gray;
     height: 0.5em;
