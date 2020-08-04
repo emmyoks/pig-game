@@ -8,6 +8,26 @@ Game rules;
 - The first player to reach 100points wins the game.
 
 */
+//jquery for Changing the player's name or leaving it as default
+var startGame = 0;
+$(document).ready(function(){
+    $('.input2').hide();
+    $('#btn1').click(function(){
+        let pName;
+       pName = $('#p1-name').val()
+       if(pName !== ""){$('#p0').text(pName)};
+       $('.input1').hide();
+       $('.input2').show()
+    });
+    $('#btn2').click(function(){
+        let pName
+       pName = $('#p2-name').val()
+       if(pName !== ""){$('#p1').text(pName)};
+       $('.input1').hide();
+           $('#pre-game').hide(1000);
+    });
+});
+
 // setting the theme to either day or night according to the current time
 var nightHour = [19,20,21,22,23,0,1,2,3,4,5,6]
 var currHour = new Date().getHours()
@@ -19,7 +39,7 @@ var totalPoint, activePlayer, currPoint;
 // document.querySelector("link").href = "bright.css"
 function switchTheme(){
    
-    if(document.querySelector("link").href === "https://raw.githubusercontent.com/emmyoks/pig-game/master/bright.css"){
+    if($('link').attr('href') === "bright.css"){
         document.querySelector("link").href = "night.css";
         document.getElementById('theme-switch').textContent = "Day Mode";
     }
